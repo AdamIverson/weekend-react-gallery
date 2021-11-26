@@ -1,5 +1,11 @@
 # React - Gallery of My Life
 
+- [ ] create GalleryList
+- [ ] create GalleryItem
+- [ ] GalleryItem is going to go into the GalleryList as a prop
+- [ ] GalleryItem is going to be an object
+- [ ] @Edan look at these notes my man
+
 Before you get started make sure to look through the code that has been provided. Server side code to retrieve data (`GET`) and like a photo (`PUT`) have been provided for you. For practice, we recommend testing out these routes in Postman. You should not need to modify these routes for base mode.
 
 ### Setup
