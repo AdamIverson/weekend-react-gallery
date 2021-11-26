@@ -4,6 +4,10 @@ import axios from 'axios';
 import './App.css';
 
 function App() {
+  // const [likeCount, setLikeCount] = useState(0);
+  // const updateLikeTotal = (likeChange) => {
+  //   setLikeCount(likeCount + likeChange);
+  // }
 // intended to hold data in a piece of state that can be passed to children
 // this took a while to get here
 // things got personal and im still not certain that it belongs here
@@ -38,6 +42,17 @@ function App() {
       console.log('GET /gallery failed', error);
     });
   };
+
+  // const addLike = () => {
+  //   axios({
+  //     method: 'PUT',
+  //     url: '/gallery'
+  //   }).then((response) => {
+  //     console.log('should i get a response from a PUT route');
+  //   }).catch((error) => {
+  //     console.log('PUT route failed');
+  //   });
+  // };
 
     return (
       <div className="App">
