@@ -10,7 +10,7 @@ function GalleryList(galleryList) {
     return (
         <ul>
             {galleryList.galleryList.map(photo => (
-                <li> key={photo.id}>
+                <li key={photo.id}>
                     <GalleryItem photo={photo}/>
                 </li>
             ))}

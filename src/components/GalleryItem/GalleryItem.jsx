@@ -1,12 +1,13 @@
 import { useState } from "react";
 import GalleryList from '../GalleryList/GalleryList'
 
-function GalleryItem({photo}) {
+function GalleryItem(photo) {
+    console.log('in GalleryItem');
     return (
-        <p>
-            <img src={photo.path}/>
-            <button onClick="submit">love it!</button>
-        </p>
+        <li>
+            <img key={photo.id} src={photo.path}/>
+            {/* <button onClick="submit">love it!</button> */}
+        </li>
     )
     
 }
