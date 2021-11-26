@@ -6,10 +6,10 @@ import './GalleryList.css'
 // something isn't working - if the data is coming in, it is not as an array
 
 
-function GalleryList(galleryList) {
+function GalleryList({galleryList}) {
     return (
         <ul>
-            {galleryList.galleryList.map(photo => (
+            {galleryList.map(photo => (
                 <li key={photo.id}>
                     <GalleryItem photo={photo}/>
                 </li>
