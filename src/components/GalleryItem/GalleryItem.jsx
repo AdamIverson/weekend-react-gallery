@@ -1,21 +1,22 @@
 import { useState } from "react";
-// import GalleryList from '../GalleryList/GalleryList'
+import GalleryList from '../GalleryList/GalleryList'
 import axios from 'axios'
 import './GalleryItem.css'
+// import galleryItems from "../../../server/modules/gallery.data";
 
-function GalleryItem({photo}) {
+function GalleryItem({photo, fetchGallery}) {
     console.log('in GalleryItem');
-    const [likeCount, setLikeCount] = useState(0)
+    // const [displayPhoto, setDisplayPhoto] = useState({photo.path})
+    
+    // const showWords = (event) => {
+    // //     if(setDisplayPhoto({photo.description})
+    // }
     const addLike = (event) => {
-        // const [likeCount, setLikeCount] = useState(0)
-
         axios({
             method: 'PUT',
-            url: '/gallery/like/:id'
+            url: `/gallery/like/${photo.id}`
         }).then((response) => {
-            console.log('should i get a response from a PUT route');
-            console.log('new like total', likeCount);
-            setLikeCount(likeCount + 1);
+            console.log(photo.likes);
         }).catch((error) => {
             console.log('PUT route failed');
         }); 
@@ -24,12 +25,12 @@ function GalleryItem({photo}) {
 
     return (
         <div>
-            <img src={photo.path}/>
+            <img  src={photo.path}/>
             <button 
                 onClick={addLike}
                 key={photo.id}
                 >love it!</button>
-                <p>{likeCount} people love this</p>
+                <p>{photo.likes} people love this</p>
         </div>
     )
 }

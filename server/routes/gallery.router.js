@@ -13,8 +13,10 @@ router.put('/like/:id', (req, res) => {
     for(const galleryItem of galleryItems) {
         if(galleryItem.id == galleryId) {
             galleryItem.likes += 1;
-        }
+        } 
+        
     }
+    console.log(galleryItems);
     res.sendStatus(200);
 }); // END PUT Route
 

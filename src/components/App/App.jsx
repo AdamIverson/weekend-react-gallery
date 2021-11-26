@@ -37,11 +37,12 @@ function App() {
     }).then((response) => {
       console.log('got a response', response.data);
       setGalleryList(response.data);
-      console.log('galleryList: why is it empty?', galleryList);
+      // console.log('galleryList: why is it empty?', galleryList);
     }).catch((error) => {
       console.log('GET /gallery failed', error);
     });
   };
+
 
   // const addLike = () => {
   //   axios({
@@ -63,7 +64,7 @@ function App() {
         {/* this is where GalleryList goes for sure
         this is where we pass props to GalleryList
         things go downhill here, but im not 100% galleryList is correct */}
-        <GalleryList galleryList={galleryList}/>
+        <GalleryList galleryList={galleryList, fetchGallery}/>
         {/* <img src="../images/goat_small.jpg"/> */}
       </div>
     );
