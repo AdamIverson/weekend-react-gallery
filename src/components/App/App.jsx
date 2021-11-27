@@ -14,6 +14,10 @@ function App() {
 // pretty strong sense that it goes here
   const [galleryList, setGalleryList] = useState([]);
 
+  // const updateGalleryList = (event) => {
+  //   setGalleryList(galleryList);
+  // }
+
   // this bb makes sure fetchGallery only runs once on load and not ad nauseum
   useEffect(() => {
     fetchGallery();
@@ -47,9 +51,10 @@ function App() {
   // const addLike = () => {
   //   axios({
   //     method: 'PUT',
-  //     url: '/gallery'
+  //     url: `/gallery/like/${photo.id}`
   //   }).then((response) => {
-  //     console.log('should i get a response from a PUT route');
+  //     console.log(photo.likes);
+  //     fetchGallery();
   //   }).catch((error) => {
   //     console.log('PUT route failed');
   //   });
@@ -64,7 +69,7 @@ function App() {
         {/* this is where GalleryList goes for sure
         this is where we pass props to GalleryList
         things go downhill here, but im not 100% galleryList is correct */}
-        <GalleryList galleryList={galleryList, fetchGallery}/>
+        <GalleryList galleryList={galleryList} fetchGallery={fetchGallery}/>
         {/* <img src="../images/goat_small.jpg"/> */}
       </div>
     );

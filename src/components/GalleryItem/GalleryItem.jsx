@@ -2,21 +2,25 @@ import { useState } from "react";
 import GalleryList from '../GalleryList/GalleryList'
 import axios from 'axios'
 import './GalleryItem.css'
-// import galleryItems from "../../../server/modules/gallery.data";
 
-function GalleryItem({photo, fetchGallery}) {
+// const refreshLikes = ({fetchGallery}) => {
+//     fetchGallery();
+// }
+function GalleryItem({ photo, fetchGallery }) {
     console.log('in GalleryItem');
-    // const [displayPhoto, setDisplayPhoto] = useState({photo.path})
-    
-    // const showWords = (event) => {
-    // //     if(setDisplayPhoto({photo.description})
+
+    // const refreshLikes = ({fetchGallery}) => {
+    //     fetchGallery();
     // }
-    const addLike = (event) => {
+
+    const addLike = () => {
+
         axios({
             method: 'PUT',
             url: `/gallery/like/${photo.id}`
         }).then((response) => {
             console.log(photo.likes);
+            fetchGallery();
         }).catch((error) => {
             console.log('PUT route failed');
         }); 
