@@ -5,15 +5,23 @@ li {
 }
 
 .description {
+    background-color: #F29588;
+    background-image: linear-gradient(#F29588, #2DA8D7, #A8C1BB, #DCB8D8, #F29588);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin: 10px;
     vertical-align: middle;
     border-radius: 25px;
-    background-color: cornflowerblue;
     box-shadow: 4px 4px 4px black;
     font-size: 3.5em;
     width: 600px;
     height: 450px;
     display: inline-block;
+    /* text-shadow: -1px 1px 0 #000,
+                  1px 1px 0 #000,
+                  1px -1px 0 #000,
+                  -1px -1px 0 #000; */
 }
 
 img {
@@ -22,20 +30,21 @@ img {
 }
 
 button {
-    color: red;
+    color: #A95622;
     text-shadow: rosybrown;
+    
     font-size: 1.5em;
     margin: 10px;
-    background-color: greenyellow;
-    box-shadow: 2px 2px 2px black;
+    background-color: #7EA970;
+    box-shadow: 2px 2px 10px;
     border-radius: 10px;
     display: block;
     width: 600px;
-    opacity: 75%;
 }
 
 .likes {
-    color: greenyellow;
+    color: #7EA970;
+    text-shadow: 1px 1px 2px black;
     font-style: italic;
     font-size: 30px;
 }

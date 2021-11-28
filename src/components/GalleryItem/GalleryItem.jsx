@@ -31,12 +31,12 @@ const flipDisplay = () => {
 if (display) {
     return (
         <div>
-            <p class="description" onClick={flipDisplay}>{photo.description}</p>
+            <p className="description" onClick={flipDisplay}>{photo.description}</p>
             <button 
                 onClick={addLike}
                 key={photo.id}
                 >love it!</button>
-                <p class="likes">{photo.likes} people love this</p>
+                <p className="likes">{photo.likes} people love this</p>
         </div>
         )
     } else {
@@ -47,7 +47,7 @@ if (display) {
                 onClick={addLike}
                 key={photo.id}
                 >love it!</button>
-                <p class="likes">{photo.likes} people love this</p>
+                <p className="likes">{photo.likes} people love this</p>
         </div>
     )};
 }
