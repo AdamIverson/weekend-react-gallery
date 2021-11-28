@@ -1,5 +1,11 @@
 body {
-  background-color: #ABB0CB;
+  background-color: hsl(0, 0%, 40%);
+}
+
+h2 {
+  color: #3A89BF;
+  font-size: 100px;
+  text-shadow: 2px 2px #F29588;
 }
 
 .App {

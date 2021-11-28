@@ -21,14 +21,14 @@ const galleryItems = [
     { 
         id: 3, 
         path: '../images/4x3/june_10_2021_film_orange_cat-2.jpg', 
-        description: 'an orange cat sits outside with green vegetation', 
+        description: 'an orange tabby cat lords over green weeds and young trees still thriving in the spring half past lilac week but preceding droughtfall, no doubt all wishing for a cooler climate to send down roots for future fields', 
         likes: 0,
         display: true
     },
     { 
         id: 4, 
         path: '../images/4x3/june_10_2021_tandem-1.jpg', 
-        description: 'tandem tandem bicylces and an adult wearing a fun spiky helmet by sea salt: the most south minneapolis scene ive ever seen', 
+        description: 'tandem tandem bicylces and an adult wearing a fun spiky helmet with a poofy poofy purple coat by sea salt, a restaurant that i guess makes sense? - the most south minneapolis scene ive ever seen', 
         likes: 0,
         display: true
     },

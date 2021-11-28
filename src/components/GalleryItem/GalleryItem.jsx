@@ -7,6 +7,8 @@ function GalleryItem({ photo, fetchGallery }) {
     console.log('in GalleryItem');
 const [display, setDisplay] = useState(true);
 
+// ideally the PUT route goes in the App.jsx
+// at some point I will refactor this code,
 const addLike = () => {
 
     axios({
@@ -35,7 +37,7 @@ if (display) {
             <button 
                 onClick={addLike}
                 key={photo.id}
-                >love it!</button>
+                >LOVE IT</button>
                 <p className="likes">{photo.likes} people love this</p>
         </div>
         )
@@ -46,7 +48,7 @@ if (display) {
             <button 
                 onClick={addLike}
                 key={photo.id}
-                >love it!</button>
+                >LOVE IT</button>
                 <p className="likes">{photo.likes} people love this</p>
         </div>
     )};

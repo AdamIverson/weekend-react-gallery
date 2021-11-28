@@ -5,6 +5,7 @@ li {
 }
 
 .description {
+    -webkit-text-stroke: 1px black;
     background-color: #F29588;
     background-image: linear-gradient(#F29588, #2DA8D7, #A8C1BB, #DCB8D8, #F29588);
     background-size: 100%;
@@ -15,35 +16,48 @@ li {
     border-radius: 25px;
     box-shadow: 4px 4px 4px black;
     font-size: 3.5em;
-    width: 600px;
-    height: 450px;
+    width: 800px;
+    height: 600px;
     display: inline-block;
-    /* text-shadow: -1px 1px 0 #000,
-                  1px 1px 0 #000,
-                  1px -1px 0 #000,
-                  -1px -1px 0 #000; */
+}
+
+.description:active {
+    transform: translateY(10px);
 }
 
 img {
+    margin: 10px;
     border-radius: 25px;
     box-shadow: 4px 4px 4px black;
 }
 
+img {
+    transform: translateY(10px);
+}
+
 button {
-    color: #A95622;
-    text-shadow: rosybrown;
-    
+    color: rgb(149, 102, 0);
+    text-shadow: rgb(22, 4, 4);
     font-size: 1.5em;
     margin: 10px;
-    background-color: #7EA970;
-    box-shadow: 2px 2px 10px;
+    background-color: #32b905;
+    box-shadow: 2px 2px 10px #F29588;
     border-radius: 10px;
     display: block;
-    width: 600px;
+    width: 800px;
+}
+
+button:hover {
+    background-color: #466e39;
+}
+
+button:active {
+    transform: translateY(4px);
+    box-shadow: 2px 2px 10px #b86459;
 }
 
 .likes {
-    color: #7EA970;
+    color: #DCCB79;
     text-shadow: 1px 1px 2px black;
     font-style: italic;
     font-size: 30px;

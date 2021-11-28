@@ -29,7 +29,7 @@ function App() {
 
     // well well well if it isn't axios
     // pretty familiar format
-    // damn shame everything goes to shit here
+    // damn shame everything goes to heck here
     // the console log tells quite a story
     // for one, it refreshes all the time bc this is react
     // two, the response is coming back in full, as an array of objects as logged on line 32
@@ -65,7 +65,7 @@ function App() {
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
-        <p>Gallery List</p>
+        <h2>Gallery List</h2>
         {/* this is where GalleryList goes for sure
         this is where we pass props to GalleryList
         things go downhill here, but im not 100% galleryList is correct */}
