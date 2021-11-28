@@ -3,3 +3,39 @@ li {
     list-style-type: none;
     display: inline-block;
 }
+
+.description {
+    margin: 10px;
+    vertical-align: middle;
+    border-radius: 25px;
+    background-color: cornflowerblue;
+    box-shadow: 4px 4px 4px black;
+    font-size: 3.5em;
+    width: 600px;
+    height: 450px;
+    display: inline-block;
+}
+
+img {
+    border-radius: 25px;
+    box-shadow: 4px 4px 4px black;
+}
+
+button {
+    color: red;
+    text-shadow: rosybrown;
+    font-size: 1.5em;
+    margin: 10px;
+    background-color: greenyellow;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 10px;
+    display: block;
+    width: 600px;
+    opacity: 75%;
+}
+
+.likes {
+    color: greenyellow;
+    font-style: italic;
+    font-size: 30px;
+}

@@ -28,15 +28,15 @@ const flipDisplay = () => {
     }
     }
 
-    if(display) {
-        return (
-            <div>
-            <p onClick={flipDisplay}>{photo.description}</p>
+if (display) {
+    return (
+        <div>
+            <p class="description" onClick={flipDisplay}>{photo.description}</p>
             <button 
                 onClick={addLike}
                 key={photo.id}
                 >love it!</button>
-                <p>{photo.likes} people love this</p>
+                <p class="likes">{photo.likes} people love this</p>
         </div>
         )
     } else {
@@ -47,7 +47,7 @@ const flipDisplay = () => {
                 onClick={addLike}
                 key={photo.id}
                 >love it!</button>
-                <p>{photo.likes} people love this</p>
+                <p class="likes">{photo.likes} people love this</p>
         </div>
     )};
 }

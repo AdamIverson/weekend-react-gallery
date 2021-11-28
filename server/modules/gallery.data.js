@@ -35,14 +35,14 @@ const galleryItems = [
     { 
         id: 5, 
         path: '../images/march_07_2021_-5.jpg', 
-        description: 'glove on a stick in the blue sky', 
+        description: 'glove on a stick in the blue winter sky', 
         likes: 0,
         display: true 
     },
     { 
         id: 6, 
         path: '../images/R1-01224-0015.jpg', 
-        description: 'an old friend drinks a drink in a steakhouse in old saint paul', 
+        description: 'an old friend drinks a drink in an old steakhouse in old saint paul', 
         likes: 0,
         display: true
     }
