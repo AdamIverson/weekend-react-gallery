@@ -14,7 +14,7 @@ const galleryItems = [
     { 
         id: 2, 
         path: '../images/4x3/june_10_2021_film_blossoms-1.jpg', 
-        description: 'pink spring blossoms minding their own business, unlike my stupid STEPDAD ROGER who my mom met a the elks two frickin stupid years ago when he was playing his stupid clarinet with his stupid polka band the roger harralson experience he smells like stupid mothballs',
+        description: 'pink spring blossoms minding their own business, unlike my stupid STEPDAD ROGER who my mom met at the elks two frickin stupid years ago when he was playing his stupid clarinet with his stupid polka band the roger harralson experience he smells like stupid mothballs',
         likes: 0,
         display: true
     },
